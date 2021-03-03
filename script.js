@@ -35,8 +35,8 @@ const transactions = [{
 const Transaction = {
     all: transactions,
 
-    add(transaction) {
-        Transaction.all.push(transaction);
+    add(transactions) {
+        Transaction.all.push(transactions);
 
         App.reload();
     },
@@ -112,7 +112,11 @@ const DOM = {
 const Utils = {
     formatAmount(value) {
         value = Number(value) * 100;
-        console.log(value);
+    },
+
+    formatDate(date) {
+        const splitedDate = date.split("-")
+        return `${splitedDate [2]}/${splitedDate[1]}/${splitedDate[0]}`
     },
 
     formatCurrency(value) {
@@ -140,7 +144,7 @@ const Form = {
         return {
             description: Form.description.value,
             amount: Form.amount.value,
-            date: Form.amount.value,
+            date: Form.date.value,
         };
     },
 
@@ -152,19 +156,42 @@ const Form = {
             amount.trim() === "" ||
             date.trim() === ""
         ) {
-            //throw new Error("Deu erro kiaralho");
+            throw new Error("Deu erro");
         }
     },
     formatData() {
         let { description, amount, date } = Form.getValues();
         amount = Utils.formatAmount(amount);
+        date = Utils.formatDate(date);
+
+        return {
+            description,
+            amount,
+            date
+        }
+    },
+
+    saveTransaction(transaction) {
+        transaction.add(transaction)
+    },
+
+    clearField() {
+        Form.description.value = ""
+        Form.amount.value = ""
+        Form.date.value = ""
     },
     submit(event) {
         event.preventDefault();
         try {
-            Form.formatData();
+            Form.validateFields()
+            const transaction = Form.formatData();
+            Transaction.add(transaction)
+            Form.saveTransaction()
+            Form.clearField()
+            Modal.close()
+
         } catch (error) {
-            alert("Deu erro kiaralho");
+            alert(error.message);
         }
     },
 };
@@ -185,10 +212,3 @@ const App = {
 };
 
 App.init();
-
-Transaction.add({
-    id: 49,
-    description: "energia",
-    amount: 18555,
-    date: "23/01/2021",
-});
