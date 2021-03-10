@@ -53,6 +53,10 @@ header h1 {
     font-weight: 100;
 }
 
+.lowImage{
+    margin-top: 8rem;
+}
+
 
 /* title ============================*/
 
@@ -61,6 +65,24 @@ h2 {
     margin-bottom: 0.8rem;
     color: #363f5f;
     font-weight: normal;
+}
+
+h1.titleCad{
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+h1.sectitleCad{
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: x-large;
+}
+h2.subtitleCad{
+    text-align: left;
+    margin: 3rem 0 0 10rem;
 }
 
 
