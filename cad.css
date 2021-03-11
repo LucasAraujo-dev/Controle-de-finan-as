@@ -1,8 +1,29 @@
+.header {
+    background-color: #2d4a22;
+    height: 100px;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#txtCad{
+    color: grey;
+    text-shadow: 1px 1px black;
+}
 .formCaad{
     margin: 5rem 0 0 10rem;
     width: 30%;
 }
 
-label {
-    margin: 2rem 0 2rem 0;
+input{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#imgFin{
+width: 900px;
+height: 600px;
+display: flex;
+margin-left: 60rem;
+margin-top: -40rem;
 }

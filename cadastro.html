@@ -17,8 +17,10 @@
 </head>
 
 <main>
-
-    <section>
+    <div class="header">
+        <h1>Bem vindo ao dev.finance$</h1>
+    </div>
+    <section id="txtCad">
         <h1 class="titleCad">Olá, então você quer total controle de sua vida financeira?<br></h1>
         <h1 class="sectitleCad">Você está no lugar certo!</h1>
         <h2 class="subtitleCad">Crie, sua conta agora, não perca mais tempo!</h2>
@@ -27,9 +29,9 @@
     <section class="formCaad">
         <form action="POST" class="formCad">
             <label class="nameCad">Nome</label>
-            <input type="text" placeholder="Ex. Pedro" >
+            <input type="text" placeholder="Ex. Pedro" id="nameCadas" ><br>
             <label class="sobrCad">Sobrenome</label><br>
-            <input type="text" placeholder="Ex. Augusto" >
+            <input type="text" placeholder="Ex. Augusto" id="sobreCad"><br>
             <label class="emailCad">Coloque seu Email aqui</label>
             <input type="email" placeholder="exemplo@exemplo.com" >
             <label class="passCad">Crie sua senha</label>
@@ -38,12 +40,11 @@
             <input type="password" >
             <label class="dateCad">Data de nascimento</label>
             <input type="date" >
+            <button type="submit" class="salvarData">Cadastrar</button>
         </form>
+        <img src="./assets/Controle_financeiro-1-1200x733.jpg" alt="imagem de controle financeiro" id="imgFin"> 
     </section>
-
 </main>
-
-
 <footer>
     <div>
         <p>dev.finance$</p>
