@@ -1,29 +1,33 @@
 .header {
-    background-color: #2d4a22;
-    height: 100px;
-    color: white;
-    text-align: center;
-    padding-top: 25px;
+  background-color: #2d4a22;
+  height: 100px;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
 }
 
-#txtCad{
-    color: grey;
-    text-shadow: 1px 1px black;
+#txtCad {
+  color: grey;
+  text-shadow: 1px 1px black;
 }
-.formCaad{
-    margin: 5rem 0 0 10rem;
-    width: 30%;
+.formCaad {
+  margin: 2rem 0 0 10rem;
+  width: 30%;
 }
 
-input{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.imgstyle {
+    position: absolute;
+    margin: -40rem 0 0 50rem;
 }
 
 #imgFin{
-width: 900px;
-height: 600px;
-display: flex;
-margin-left: 60rem;
-margin-top: -40rem;
+    width: 1000px;
+    height: 500px;
+    box-shadow: 2px 2px 2px 2px grey;
+
 }
