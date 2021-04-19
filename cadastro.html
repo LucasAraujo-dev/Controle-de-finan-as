@@ -31,7 +31,7 @@
             <legend>Cadastre-se aqui</legend>
             <form action="POST" class="formCad">
                 <label class="nameCad">Nome</label>
-                <input type="text" placeholder="Ex. Pedro" id="nameCadas"><br>
+                <input type="text" placeholder="Ex. Pedro" id="nameCadas" required><br>
                 <label class="sobrCad">Sobrenome</label><br>
                 <input type="text" placeholder="Ex. Augusto" id="sobreCad"><br>
                 <label class="emailCad">Coloque seu Email aqui</label>
@@ -51,6 +51,7 @@
 
     <div class="imgstyle">
         <img src="./assets/Imagem36.jpg" alt="imagem de controle financeiro" id="imgFin">
+    </div>
 </main>
 
 <div id="itemsWrapper">
@@ -62,7 +63,8 @@
     </div>
 </div>
 <script src="main.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
 <script src="auth.js"></script>
 
 <footer>

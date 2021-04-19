@@ -14,7 +14,7 @@ html {
   text-shadow: 1px 1px grey;
 }
 .formCaad {
-  margin: 2rem 0 0 10rem;
+  margin: 2rem 0 0 5rem;
   width: 30%;
   position: absolute;
 }
@@ -22,16 +22,16 @@ html {
 input {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 1px 1px 1px 1px grey;
+  box-shadow: 1px 1px 1px 1px rgb(12, 104, 39);
 }
 
 .imgstyle {
   position: relative;
-  margin: 10em 0 0 50em;
+  margin: 10em 0 0 45em;
 }
 
 #imgFin {
-  width: 90%;
+  width: 100%;
   height: 500px;
 }
 
@@ -70,4 +70,11 @@ legend {
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+
+@media (max-width: 1366px) {
+  .imgstyle {
+      margin-left: 550px;
+      width: 55%;
+  }
 }

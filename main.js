@@ -7,3 +7,4 @@ document.querySelector("#items").addEventListener("wheel", () => {
     }
     event.preventDefault()
 })
+
