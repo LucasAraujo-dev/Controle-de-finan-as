@@ -14,7 +14,7 @@ html {
   text-shadow: 1px 1px grey;
 }
 .formCaad {
-  margin: 2rem 0 0 5rem;
+  margin: 2rem 0 0 2rem;
   width: 30%;
   position: absolute;
 }
@@ -27,7 +27,7 @@ input {
 
 .imgstyle {
   position: relative;
-  margin: 10em 0 0 45em;
+  margin: 10em 0 0 40em;
 }
 
 #imgFin {

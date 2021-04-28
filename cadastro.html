@@ -28,21 +28,13 @@
 
     <section class="formCaad">
         <fieldset>
-            <legend>Cadastre-se aqui</legend>
+            <legend>Faça seu Login aqui</legend>
             <form action="POST" class="formCad">
-                <label class="nameCad">Nome</label>
-                <input type="text" placeholder="Ex. Pedro" id="nameCadas" required><br>
-                <label class="sobrCad">Sobrenome</label><br>
-                <input type="text" placeholder="Ex. Augusto" id="sobreCad"><br>
                 <label class="emailCad">Coloque seu Email aqui</label>
-                <input type="email" placeholder="exemplo@exemplo.com">
-                <label class="passCad">Crie sua senha</label>
-                <input type="password">
-                <label class="pass2Cad">Confirme sua senha</label>
-                <input type="password">
-                <label class="dateCad">Data de nascimento</label>
-                <input type="date">
-                <button type="button" class="salvarData">Cadastrar</button>
+                <input type="email" placeholder="exemplo@exemplo.com" id="emailCads">
+                <label class="passCad" >Escreva sua senha</label>
+                <input type="password" id="passCads">
+                <button type="button" class="salvarData" id="logiTest">Cadastrar</button>
         </fieldset>
 
         </div>
@@ -63,8 +55,14 @@
     </div>
 </div>
 <script src="main.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
 <script src="auth.js"></script>
 
 <footer>
