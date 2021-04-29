@@ -79,6 +79,19 @@ h1.sectitleCad{
     font-weight: bold;
     font-size: x-large;
 }
+h3.titleCad{
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h3.sectitleCad{
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: x-large;
+}
 h2.subtitleCad{
     text-align: left;
     margin: 3rem 0 0 5rem;

@@ -8,15 +8,33 @@ html {
   text-align: center;
   padding-top: 25px;
 }
+.logoImg {
+  margin-top: 10px;
+}
+#princImgD {
+  height: 300px;
+}
+#logi {
+  float: right;
+  width: 150px;
+  position: flex;
+  margin-top: -75px;
+  margin-right: 30px;
+  padding: 10px 5px;
+  line-height: 25px;
+  background-color: #2d9606;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+}
 
 #txtCad {
   color: #2d4a22;
   text-shadow: 1px 1px grey;
 }
 .formCaad {
-  margin: 2rem 0 0 2rem;
+  margin: 4rem 0 0 35%;
   width: 30%;
-  position: absolute;
 }
 
 input {
@@ -51,7 +69,6 @@ legend {
 
 #itemsWrapper {
   width: 100%;
-  margin-top: 200px;
 }
 
 #items {
@@ -68,13 +85,13 @@ legend {
 }
 #items img {
   width: 100%;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
 }
 
 @media (max-width: 1366px) {
   .imgstyle {
-      margin-left: 550px;
-      width: 55%;
+    margin-left: 550px;
+    width: 55%;
   }
 }
