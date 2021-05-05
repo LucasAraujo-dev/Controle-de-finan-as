@@ -88,6 +88,10 @@ legend {
   height: 600px;
   object-fit: cover;
 }
+#cadLink{
+  margin-top: 25px;
+  text-align: center;
+}
 
 @media (max-width: 1366px) {
   .imgstyle {

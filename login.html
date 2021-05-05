@@ -8,12 +8,13 @@
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="/assets/money.png" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="./cad.css">
 
-    <title>Cadastro</title>
+    <title>Login</title>
 </head>
 
 <main>
@@ -34,7 +35,7 @@
     </div>
 
     <section id="txtCad">
-        <h3 class="titleCad">Quer dar o primeiro passo para uma vida melhor?</h1>
+        <h3 class="titleCad">Quer dar o primeiro passo para a indepedência financeira?</h1>
             <h3 class="sectitleCad">Você está no lugar certo!</h1>
     </section>
 
@@ -46,11 +47,12 @@
                 <input type="email" placeholder="exemplo@exemplo.com" id="emailCads">
                 <label class="passCad">Escreva sua senha</label>
                 <input type="password" id="passCads">
-                <button type="reset" class="salvarData" id="logiTest">Logar</button>
+                <button type="reset" class="salvarData" id="logiTest" onkeypress="firebase.auth()">Logar</button>
                 <a name="logiForm"></a>
         </fieldset>
         </div>
         </form>
+        <h3 id="cadLink">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></h3>
     </section>
 
 </main>

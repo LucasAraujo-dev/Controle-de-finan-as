@@ -31,5 +31,6 @@ cadDone.addEventListener('click', () =>
  .catch((error) => {
    var errorCode = error.code;
    var errorMessage = error.message;
-   alert(errorMessage);
+   alert("Dados incorretos");
    }));
+
