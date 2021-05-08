@@ -1,4 +1,3 @@
-
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyBOntPAXoiaohWEBIhDIqPwMIrb_Yc4PXw",
@@ -33,4 +32,3 @@ cadDone.addEventListener('click', () =>
    var errorMessage = error.message;
    alert("Dados incorretos");
    }));
-

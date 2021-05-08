@@ -42,16 +42,15 @@
     <section class="formCaad">
         <fieldset>
             <legend>Faça seu Login aqui</legend>
-            <form action="POST"  class="formCad">
+            <form action="POST" class="formCad">
                 <label class="emailCad">Coloque seu Email aqui</label>
-                <input type="email" placeholder="exemplo@exemplo.com" id="emailCads">
+                <input type="email" placeholder="exemplo@exemplo.com" id="emailCads" autofocus="true">
                 <label class="passCad">Escreva sua senha</label>
                 <input type="password" id="passCads">
-                <button type="reset" class="salvarData" id="logiTest" onkeypress="firebase.auth()">Logar</button>
+                <button type="reset" class="salvarData" id="logiTest">Logar</button>
                 <a name="logiForm"></a>
+            </form>
         </fieldset>
-        </div>
-        </form>
         <h3 id="cadLink">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></h3>
     </section>
 
@@ -75,4 +74,5 @@
         <p>dev.finance$</p>
     </div>
 </footer>
+
 </html>
